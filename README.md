@@ -15,8 +15,8 @@ regarding customer information as well as extract valuable information regarding
 - ProductsController
 
 
-The API will make of the following methods.
--GET
--POST
--PATCH
--DELETE
+The API will make of the following Actions.
+-GET:To fetch data.
+-PUT:To update the data
+-PATCH:
+-DELETE: To Delete erroneous data or cancelled orders
