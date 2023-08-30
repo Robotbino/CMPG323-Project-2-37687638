@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql1": {
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/zaazrcmpg323-37687638/databases/Poject2",
+      "type": "mssql.azure",
+      "connectionId": "Server=tcp:zaazrcmpg323-37687638.database.windows.net,1433;InitialCatalog=Poject2;Encrypt=True;TrustServerCertificate=False;ConnectionTimeout=30;Authentication=\"ActiveDirectoryDefault\";",
+      "dynamicId": null
+    }
+  }
+}
