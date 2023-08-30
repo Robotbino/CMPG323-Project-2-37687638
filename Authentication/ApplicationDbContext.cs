@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace JWTAuthentication.Authentication
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -16,7 +16,6 @@ namespace JWTAuthentication.Authentication
         }
     }
 }
-
 
 /***namespace CMPG323_Project2_37687638.Authentication
 {
