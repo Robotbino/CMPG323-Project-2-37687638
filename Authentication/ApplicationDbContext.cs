@@ -16,7 +16,6 @@ namespace JWTAuthentication.Authentication
         }
     }
 }
-
 /***namespace CMPG323_Project2_37687638.Authentication
 {
     public class AppplicationDbContext
