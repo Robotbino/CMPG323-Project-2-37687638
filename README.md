@@ -38,5 +38,3 @@ Here is your reference list with Harvard style referencing:
 
 5. CMPG323 - IT Developments. (2023, August 17). 17 Aug CMPG323 weekly virtual class Cloud, deploy API [YouTube Video]. https://youtu.be/murThM9ATJA?si=Ma2zCApRR4DAeIQp
    Accessed: August 27, 2023.
-
-Please ensure that you verify the publication dates and access dates for accuracy.
