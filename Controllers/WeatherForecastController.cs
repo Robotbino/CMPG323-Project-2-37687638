@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
-namespace WebApplication3.Controllers
+namespace CMPG323_Project2_37687638
 {
     [ApiController]
     [Route("[controller]")]
