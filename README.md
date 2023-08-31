@@ -15,7 +15,7 @@ regarding customer information as well as extract valuable information regarding
 
 
 #### The API will have the follwing fuctionality.
-- POST:To create new entries in the data
+- POST:To create new entries in the data.
 - GET:To fetch data.
-- PUT:To update the data
-- DELETE: To Delete erroneous data or cancelled orders
+- PUT:To update the data.
+- DELETE: To Delete erroneous data or cancelled orders.
