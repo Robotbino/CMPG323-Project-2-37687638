@@ -99,6 +99,15 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+}else
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(O =>
+    {
+        O.SwaggerEndpoint("/swagger/v1/swagger.json", "API");
+        O.RoutePrefix = String.Empty;
+    });
+
 }
 
 app.UseHttpsRedirection();
