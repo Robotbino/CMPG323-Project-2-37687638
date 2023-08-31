@@ -6,9 +6,3 @@
         public string? Message { get; set; }
     }
 }
-/***namespace CMPG323_Project2_37687638.Authentication
-{
-    public class Response
-    {
-    }
-}***/
