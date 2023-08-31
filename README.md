@@ -22,8 +22,6 @@ regarding customer information as well as extract valuable information regarding
 
 
 ##Refereneces:
-Here is your reference list with Harvard style referencing:
-
 1. Invulnerable Creators. (2020, September 18). Git Bash Windows Tutorial for Beginners | Part 1 [YouTube Video]. https://youtu.be/RBCq2mrXsMk?si=lYSCyGoURH8I1BJf
    Accessed: August 22, 2023.
 
