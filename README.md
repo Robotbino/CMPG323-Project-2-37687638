@@ -19,3 +19,24 @@ regarding customer information as well as extract valuable information regarding
 - GET:To fetch data.
 - PUT:To update the data.
 - DELETE: To Delete erroneous data or cancelled orders.
+
+
+##Refereneces:
+Here is your reference list with Harvard style referencing:
+
+1. Invulnerable Creators. (2020, September 18). Git Bash Windows Tutorial for Beginners | Part 1 [YouTube Video]. https://youtu.be/RBCq2mrXsMk?si=lYSCyGoURH8I1BJf
+   Accessed: August 22, 2023.
+
+2. Microsoft. (2022, October 11). ASP.NET Core web API documentation with Swagger / OpenAPI. Microsoft Docs. https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-3.1
+   Accessed: August 14, 2023.
+
+3. Microsoft. (2023, August 17). Tutorial: Create a web API with ASP.NET Core. Microsoft Docs. https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0&tabs=visual-studio
+   Accessed: August 14, 2023.
+
+4. SoftWiz Circle. (2023, February 27). Building and Deploying a Basic REST API with Azure App Service, Azure Portal, and Visual Studio [YouTube Video]. https://youtu.be/UxTp9vRtvx4?si=MGHFgLn1L7rQ2Ye1
+   Accessed: August 27, 2023.
+
+5. CMPG323 - IT Developments. (2023, August 17). 17 Aug CMPG323 weekly virtual class Cloud, deploy API [YouTube Video]. https://youtu.be/murThM9ATJA?si=Ma2zCApRR4DAeIQp
+   Accessed: August 27, 2023.
+
+Please ensure that you verify the publication dates and access dates for accuracy.
