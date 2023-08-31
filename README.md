@@ -15,7 +15,7 @@ regarding customer information as well as extract valuable information regarding
 - ProductsController
 
 
-####The API will have the follwing fuctionality.
+#### The API will have the follwing fuctionality.
 1.POST:To create new entries in the data
 2.GET:To fetch data.
 3.PUT:To update the data
