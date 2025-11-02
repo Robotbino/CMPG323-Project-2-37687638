@@ -20,11 +20,11 @@ regarding customer information as well as extract valuable information regarding
 - PUT:To update the data.
 - DELETE: To Delete erroneous data or cancelled orders.
 
-##Link to API Project hosted on Azure
+## Link to API Project hosted on Azure
 https://cmpg323-project2-3768763820230831140554.azurewebsites.net/index.html
 
 
-##Refereneces:
+## Refereneces:
 1. Invulnerable Creators. (2020, September 18). Git Bash Windows Tutorial for Beginners | Part 1 [YouTube Video]. https://youtu.be/RBCq2mrXsMk?si=lYSCyGoURH8I1BJf
    Accessed: August 22, 2023.
 
