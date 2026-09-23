@@ -25,8 +25,9 @@ namespace CMPG323_Project2_37687638.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=tcp:zaazrcmpg323-37687638.database.windows.net,1433;Initial Catalog=Poject2;Persist Security Info=False;User ID=adminB;Password=Tinyr3d4ox;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+                // Resolved from configuration (user-secrets, environment variables or App Service
+                // settings). Never put a connection string in source code.
+                optionsBuilder.UseSqlServer("Name=ConnectionStrings:ConnStr");
             }
         }
 

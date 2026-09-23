@@ -1,4 +1,5 @@
 using JWTAuthentication.Authentication;
+using CMPG323_Project2_37687638.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -17,8 +18,18 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 
+// Secrets live outside the repo: user-secrets in Development, environment variables or
+// App Service settings elsewhere. See README > Running locally.
+var connectionString = builder.Configuration.GetConnectionString("ConnStr")
+    ?? throw new InvalidOperationException("ConnectionStrings:ConnStr is not configured. See README > Running locally.");
+var jwtSecret = builder.Configuration["JWT:Secret"]
+    ?? throw new InvalidOperationException("JWT:Secret is not configured. See README > Running locally.");
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnStr")));
+    options.UseSqlServer(connectionString));
+
+builder.Services.AddDbContext<Poject2Context>(options =>
+    options.UseSqlServer(connectionString));
 
 // For Identity
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
@@ -44,7 +55,7 @@ builder.Services.AddAuthentication(options =>
             ValidateLifetime = true,
             ValidIssuer = builder.Configuration["Jwt:ValidIssuer"],
             ValidAudience = builder.Configuration["Jwt:ValidAudience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Secret"]))
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSecret))
 
         };
     });

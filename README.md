@@ -20,8 +20,28 @@ regarding customer information as well as extract valuable information regarding
 - PUT:To update the data.
 - DELETE: To Delete erroneous data or cancelled orders.
 
-## Link to API Project hosted on Azure
-https://cmpg323-project2-3768763820230831140554.azurewebsites.net/index.html
+## Deployment
+During the 2023 semester the API ran on Azure App Service with an Azure SQL database. Both have since been retired, so run it locally instead.
+
+## Running locally
+No secrets are stored in this repository. In Development they come from [user secrets](https://learn.microsoft.com/aspnet/core/security/app-secrets); anywhere else, use environment variables or App Service settings.
+
+**Prerequisites:** .NET 6 SDK, SQL Server LocalDB (installed with Visual Studio) and the EF Core CLI (`dotnet tool install --global dotnet-ef`).
+
+1. Set the two required settings from the project folder (PowerShell):
+   ```powershell
+   dotnet user-secrets set "ConnectionStrings:ConnStr" "Server=(localdb)\MSSQLLocalDB;Database=Poject2;Trusted_Connection=True;MultipleActiveResultSets=true"
+   $bytes = New-Object byte[] 32; [Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($bytes)
+   dotnet user-secrets set "JWT:Secret" ([Convert]::ToBase64String($bytes))
+   ```
+2. Create the database. The Identity tables already have a migration. The business tables (customers, orders, products) were scaffolded from the original Azure database, so generate their migration once:
+   ```powershell
+   dotnet ef database update --context ApplicationDbContext
+   dotnet ef migrations add BusinessSchema --context Poject2Context --output-dir Migrations/Poject2
+   dotnet ef database update --context Poject2Context
+   ```
+3. Start the API with `dotnet run` and open https://localhost:7142/swagger.
+4. Register with `POST /api/Authenticate/register` (or `register-admin`) and log in with `POST /api/Authenticate/login`. Then click **Authorize** and enter `Bearer <token>`: every Customers, Orders, OrderDetails and Products endpoint requires it.
 
 
 ## Refereneces:
